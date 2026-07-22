@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "certbot-dns-lws"
+version = "0.1.0"
+description = "LWS DNS authenticator plugin for Certbot"
+requires-python = ">=3.10"
+dependencies = [
+    "certbot>=2.0",
+    "requests>=2.31"
+]
+
+[project.entry-points."certbot.plugins"]
+dns-lws = "certbot_dns_lws.authenticator:Authenticator"
+
+[tool.setuptools.packages.find]
+where = ["src"]
