@@ -132,7 +132,7 @@ The plugin has been successfully tested with:
 Clone the repository:
 
 ```bash
-git clone https://github.com/<your-username>/certbot-dns-lws.git
+git clone https://github.com/zergflag/certbot-dns-lws.git
 ```
 
 Install in editable mode:
