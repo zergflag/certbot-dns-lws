@@ -26,7 +26,7 @@ This plugin allows Certbot to complete **DNS-01** ACME challenges using the offi
 ### From source
 
 ```bash
-git clone https://github.com/<your-username>/certbot-dns-lws.git
+git clone https://github.com/zergflag/certbot-dns-lws.git
 cd certbot-dns-lws
 
 python3 -m venv .venv
