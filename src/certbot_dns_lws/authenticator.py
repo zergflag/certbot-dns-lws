@@ -72,8 +72,6 @@ class Authenticator(dns_common.DNSAuthenticator):
                 value=validation,
             )
         except Exception as exc:
-            # Une erreur de nettoyage ne doit pas masquer le résultat ACME,
-            # mais doit être clairement visible dans les journaux.
             LOGGER.warning(
                 "Unable to delete LWS TXT record %s: %s",
                 validation_name,
