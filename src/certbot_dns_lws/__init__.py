@@ -1,3 +1,3 @@
-"""Plugin DNS LWS pour Certbot."""
+"""Plugin DNS LWS for Certbot."""
 
 __version__ = "0.1.0"
