@@ -28,8 +28,6 @@ class LwsDnsClient:
         self.timeout = timeout
         self.session = requests.Session()
 
-        # À ajuster uniquement si la documentation/clé LWS indique
-        # un autre nom d'en-tête d'authentification.
         self.session.headers.update(
             {
                 "X-Auth-Login": login,
@@ -79,12 +77,6 @@ class LwsDnsClient:
     def _find_managed_zone(self, fqdn: str) -> str:
         labels = fqdn.rstrip(".").split(".")
 
-        # Exemple :
-        # _acme-challenge.app.example.fr
-        # essaie successivement :
-        # _acme-challenge.app.example.fr
-        # app.example.fr
-        # example.fr
         for index in range(len(labels) - 1):
             candidate = ".".join(labels[index:])
 
