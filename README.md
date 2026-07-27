@@ -1,5 +1,10 @@
 # certbot-dns-lws
 
+[![PyPI version](https://img.shields.io/pypi/v/certbot-dns-lws.svg)](https://pypi.org/project/certbot-dns-lws/)
+[![Python Versions](https://img.shields.io/pypi/pyversions/certbot-dns-lws.svg)](https://pypi.org/project/certbot-dns-lws/)
+[![License](https://img.shields.io/github/license/zergflag/certbot-dns-lws.svg)](https://github.com/zergflag/certbot-dns-lws/blob/main/LICENSE)
+[![Downloads](https://img.shields.io/pypi/dm/certbot-dns-lws.svg)](https://pypi.org/project/certbot-dns-lws/)
+
 A Certbot DNS plugin for **LWS (Ligne Web Services)**.
 
 This plugin allows Certbot to complete **DNS-01** ACME challenges using the official LWS DNS API, enabling automatic issuance and renewal of Let's Encrypt certificates, including wildcard certificates.
