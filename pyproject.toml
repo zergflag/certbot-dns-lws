@@ -5,16 +5,48 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "certbot-dns-lws"
 version = "1.0.0"
-authors = ["zergflag <contact@zergflag.fr>"]
-license = "MIT"
-readme = "README.md"
-repository = "https://github.com/zergflag/certbot-dns-lws"
 description = "LWS DNS authenticator plugin for Certbot"
+readme = "README.md"
 requires-python = ">=3.10"
+license = "MIT"
+
+authors = [
+    { name = "zergflag", email = "contact@zergflag.fr" }
+]
+
 dependencies = [
     "certbot>=2.0",
     "requests>=2.31"
 ]
+
+keywords = [
+    "certbot",
+    "letsencrypt",
+    "acme",
+    "dns",
+    "dns-01",
+    "lws"
+]
+
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Plugins",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Internet :: Name Service (DNS)",
+    "Topic :: Security :: Cryptography"
+]
+
+[project.urls]
+Homepage = "https://github.com/zergflag/certbot-dns-lws"
+Repository = "https://github.com/zergflag/certbot-dns-lws"
+Issues = "https://github.com/zergflag/certbot-dns-lws/issues"
 
 [project.entry-points."certbot.plugins"]
 dns-lws = "certbot_dns_lws.authenticator:Authenticator"
