@@ -118,7 +118,7 @@ The plugin has been successfully tested with:
 * Wildcard certificates
 * Automatic renewals
 
-Support for native integration into NPM is planned.
+Supported in [Nginx Proxy Manager !](https://github.com/NginxProxyManager/nginx-proxy-manager) (from version 2.16 onwards)
 
 ## Tested
 
