@@ -15,7 +15,7 @@ This plugin allows Certbot to complete **DNS-01** ACME challenges using the offi
 * ✅ Wildcard certificate support (`*.example.com`)
 * ✅ Uses the official LWS DNS API
 * ✅ Compatible with Certbot 2.x+
-* ✅ Compatible with Nginx Proxy Manager (custom image or future native integration)
+* ✅ Compatible with Nginx Proxy Manager
 
 ## Requirements
 
